@@ -1,0 +1,17 @@
+//頂点情報
+v square pnt 4
+-1  1 0   0 0 1   0 0
+ 1  1 0   0 0 1   1 0
+-1 -1 0   0 0 1   0 1
+ 1 -1 0   0 0 1   1 1
+//インデックス
+i square 6
+0 2 1
+1 2 3
+//テクスチャ
+x banana assets\textures\square\banana.png
+x gorilla assets\textures\square\gorilla.png
+x unko assets\textures\square\unkoWhite.png
+//バッチ
+b square square square 1
+0 2 gorilla
