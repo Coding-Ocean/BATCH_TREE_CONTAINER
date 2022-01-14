@@ -1,3 +1,26 @@
+//頂点情報
+v square pnt 4
+-0.5  0.5 0    0 0 1    0 0 //[0]左上
+-0.5 -0.5 0    0 0 1    0 1 //[1]左下
+ 0.5  0.5 0    0 0 1    1 0 //[2]右上
+ 0.5 -0.5 0    0 0 1    1 1 //[3]右下
+
+//三角形インデックス
+i square 6
+0 1 2
+2 1 3
+
+//テクスチャ
+x banana assets\textures\square\banana.png
+x gorilla assets\textures\square\gorilla.png
+
+//バッチ
+b banana square square 1
+0 2 banana
+
+b gorilla square square 1
+0 2 gorilla
+
 v floor pnt 4
 -5 0 5   0 1 0  0 1  
 5 0 5    0 1 0  5 1  
