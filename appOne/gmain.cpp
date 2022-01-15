@@ -20,6 +20,7 @@
 void gmain()
 {
     window(1920, 1080, full);
+    //window(1280, 720);
 
     //シェーダに渡すデータを用意
     MATRIX world, view, proj;
@@ -45,21 +46,17 @@ void gmain()
     shader->setLightPosition(lightPos);
     shader->setLightAmbient(ambient);
     shader->setDiffuse(diffuse);
-    setRasterizerCullNone;
+    setRasterizerCullNone();
 
     //３Ｄモデルデータ
     CONTAINER* container = new CONTAINER("assets\\assets.txt");
     BATCH* batch = container->batch("banana");
-    float angle = 0;
 
     while (notQuit)
     {
-        angle += 0.008f;
-
         clear(60, 120, 240);
         //world行列
         world.identity();
-        world.mulRotateY(angle);
         //バッチモデルの表示
         batch->draw(shader, world);
     }
