@@ -19,4 +19,7 @@
   <ItemGroup>
     <ClCompile Include="gmain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\assets.txt" />
+  </ItemGroup>
 </Project>
